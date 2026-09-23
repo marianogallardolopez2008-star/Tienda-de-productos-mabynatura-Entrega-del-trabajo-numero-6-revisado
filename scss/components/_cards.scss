@@ -1,8 +1,10 @@
 @use "../utilities/variables" as *;
 
+$padding-galeria: 20px;
+
 .galeria-index,
 .galeria-contacto {
-    padding: 40px;
+    padding: $padding-galeria + 20px;
 }
 
 .card-galeria {
@@ -48,10 +50,18 @@
     background-color: $color-principal;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 768px) {
     .carousel-item {
         img {
-            max-height: 260px;
+            max-height: 380px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-item {
+        img {
+            max-height: 480px;
         }
     }
 }

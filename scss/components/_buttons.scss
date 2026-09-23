@@ -1,21 +1,26 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
-.btn-custom {
-    display: inline-block;
-    margin-top: 15px;
-    background-color: $color-principal;
-    color: $color-texto-claro;
-    border: 2px solid $color-principal;
+%boton-base {
     border-radius: 20px;
-    padding: 10px 25px;
-    font-weight: 600;
     text-decoration: none;
+}
+
+.btn-custom {
+    @extend %boton-base;
+
+ display: inline-block;
+ margin-top: 15px;
+  background-color: $color-principal;
+ color: $color-texto-claro;
+ border: 2px solid $color-principal;
+ padding: 10px 25px;
+  font-weight: 600;
 
     @include transicion();
 
-    &:hover,
-    &:focus {
+ &:hover,
+  &:focus {
         background-color: $color-fondo;
         border-color: $color-fondo;
         color: $color-texto-oscuro;

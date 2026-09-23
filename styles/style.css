@@ -56,20 +56,32 @@ p {
 }
 
 .img-home {
-  height: 90px;
+  height: 60px;
   width: auto;
 }
 
-@media (max-width: 767.98px) {
+.titulo-diferente {
+  font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
   .img-home {
-    height: 60px;
+    height: 75px;
   }
   .titulo-diferente {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .img-home {
+    height: 90px;
+  }
+  .titulo-diferente {
+    font-size: 1.8rem;
   }
 }
 footer {
-  padding: 0 90px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,16 +96,19 @@ footer nav ul {
   list-style: none;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 768px) {
   footer {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
+    padding: 30px 50px;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    padding: 0 90px;
   }
 }
 .navbar-custom {
   background-color: #47315E;
-  padding: 15px 50px;
+  padding: 10px 20px;
 }
 .navbar-custom .navbar-brand {
   color: #FAFAFF;
@@ -118,7 +133,7 @@ footer nav ul {
 .nav-decoracion {
   text-decoration: none;
   color: #0C080A;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   padding: 5px 15px;
   border: 2px solid #0C080A;
@@ -141,7 +156,7 @@ footer nav ul {
 .nav-decoracion2 {
   text-decoration: none;
   color: #0C080A;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -155,22 +170,38 @@ footer nav ul {
   color: #0C080A;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 768px) {
   .navbar-custom {
-    padding: 10px 20px;
+    padding: 12px 35px;
+  }
+  .nav-decoracion,
+  .nav-decoracion2 {
+    font-size: 1.3rem;
   }
 }
+@media (min-width: 1024px) {
+  .navbar-custom {
+    padding: 15px 50px;
+  }
+  .nav-decoracion,
+  .nav-decoracion2 {
+    font-size: 1.5rem;
+  }
+}
+.btn-custom {
+  border-radius: 20px;
+  text-decoration: none;
+}
+
 .btn-custom {
   display: inline-block;
   margin-top: 15px;
   background-color: #741A31;
   color: #FAFAFF;
   border: 2px solid #741A31;
-  border-radius: 20px;
   padding: 10px 25px;
   font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-out;
 }
 .btn-custom:hover, .btn-custom:focus {
   background-color: #A893B4;
@@ -228,23 +259,28 @@ footer nav ul {
   background-color: #741A31;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 768px) {
   .carousel-item img {
-    max-height: 260px;
+    max-height: 380px;
+  }
+}
+@media (min-width: 1024px) {
+  .carousel-item img {
+    max-height: 480px;
   }
 }
 .presentacion-index {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 40px;
+  padding: 20px;
 }
 
 .servicios-index {
   display: grid;
   grid-template-areas: "contenido" "imagen";
   gap: 2rem;
-  padding: 40px;
+  padding: 20px;
 }
 .servicios-index .servicios-contenido {
   grid-area: contenido;
@@ -253,34 +289,73 @@ footer nav ul {
   grid-area: imagen;
 }
 
-@media (min-width: 1024px) {
-  .servicios-index {
-    grid-template-areas: "contenido imagen";
-    grid-template-columns: 1fr 1fr;
-  }
+h1 {
+  font-size: 2rem;
 }
-@media (max-width: 767.98px) {
+
+.parrafodetitulo-diferenciado {
+  font-size: 1.2rem;
+}
+
+p,
+.parrafo-diferenciado {
+  font-size: 1.1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
   h1 {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
   .parrafodetitulo-diferenciado {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   p,
   .parrafo-diferenciado {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .presentacion-index,
   .galeria-index,
   .galeria-contacto {
-    padding: 20px;
+    padding: 30px;
   }
-  figure img {
-    width: 100%;
-    height: auto;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .parrafodetitulo-diferenciado {
+    font-size: 2rem;
+  }
+  p,
+  .parrafo-diferenciado {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .presentacion-index {
+    padding: 40px;
+  }
+  .servicios-index {
+    grid-template-areas: "contenido imagen";
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+  }
+  .galeria-index,
+  .galeria-contacto {
+    padding: 40px;
   }
 }
 

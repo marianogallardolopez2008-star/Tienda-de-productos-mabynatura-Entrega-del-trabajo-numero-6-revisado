@@ -1,4 +1,3 @@
-@mixin transicion($tiempo: 0.3s) {
-    transition: all $tiempo ease;
-}
-// ssssssssssssss
+@mixin transicion($tiempo: 0.3s, $tipo: ease-out) {
+    transition: all $tiempo $tipo;
+ }

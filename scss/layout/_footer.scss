@@ -1,5 +1,5 @@
 footer {
-    padding: 0 90px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,10 +17,14 @@ footer {
     }
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 768px) {
     footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
+        padding: 30px 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        padding: 0 90px;
     }
 }
