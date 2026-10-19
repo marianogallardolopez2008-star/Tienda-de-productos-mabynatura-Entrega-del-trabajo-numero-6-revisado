@@ -1,0 +1,59 @@
+// Secciones de las paginas (presentacion, servicios, imagenes)
+
+.presentacion-index {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.servicios-index {
+    display: grid;
+    grid-template-areas:
+        "contenido"
+        "imagen";
+    gap: 2rem;
+    padding: 20px;
+
+    .servicios-contenido {
+        grid-area: contenido;
+    }
+
+    figure {
+        grid-area: imagen;
+    }
+}
+
+figure {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+// Tablet
+@media (min-width: 768px) {
+    .presentacion-index,
+    .galeria-index,
+    .galeria-contacto {
+        padding: 30px;
+    }
+}
+
+// Desktop
+@media (min-width: 1024px) {
+    .presentacion-index {
+        padding: 40px;
+    }
+
+    .servicios-index {
+        grid-template-areas: "contenido imagen";
+        grid-template-columns: 1fr 1fr;
+        padding: 40px;
+    }
+
+    .galeria-index,
+    .galeria-contacto {
+        padding: 40px;
+    }
+}
