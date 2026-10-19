@@ -31,7 +31,6 @@ figure {
     }
 }
 
-// Tablet
 @media (min-width: 768px) {
     .presentacion-index,
     .galeria-index,
@@ -39,8 +38,6 @@ figure {
         padding: 30px;
     }
 }
-
-// Desktop
 @media (min-width: 1024px) {
     .presentacion-index {
         padding: 40px;
