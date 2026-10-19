@@ -1,1 +1,5 @@
-# Tienda Mabynatura Sitio web para la tienda de productos Natura Mabynatura, desarrollado con HTML, CSS y Bootstrap. ## Sitio desplegado https://marianogallardolopez2008-star.github.io/Tienda-de-productos-mabynatura-Entrega-del-trabajo-numero-6-revisado/
+# Tienda Mabynatura
+
+## Sitio desplegado
+
+https://tiendamabynatura.netlify.app/
